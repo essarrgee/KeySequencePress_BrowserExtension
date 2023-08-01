@@ -23,7 +23,7 @@ document.addEventListener("keydown", function(event) {
 	if (event.code == "ShiftLeft") {
 		shiftDown = true;
 	}
-	if (event.code == "KeyA" && shiftDown) {
+	if (event.code == "Backquote" && shiftDown) {
 		// console.log("press");
 		chrome.storage.local.get("keyPluginStoredSequence", function(data) {
 			console.log(data["keyPluginStoredSequence"]);
